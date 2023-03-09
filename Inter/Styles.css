@@ -36,6 +36,8 @@ header{
     justify-content:center;
 }
 
+
+
 header nav{
     background: #f4d69d;
     overflow: hidden;
@@ -59,7 +61,7 @@ header nav ul li {
     float:left;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-align: center;
     padding: 5px 80px;
     display: block;
@@ -68,13 +70,17 @@ header nav ul li a{
     font-size: 20px;
 }
 
-
 header nav ul li a:hover{
     background: #e2c496;
 }
 
 html{
     width:150%;
+}
+
+.Logonav{
+    width:100%;
+    height:%;
 }
 
 footer{
