@@ -18,7 +18,7 @@ body{
 
 .slider img {
     display: none;
-    max-width: 100%; /* Establecer el ancho máximo de las imágenes en el 100% del ancho del slider */
+    max-width: 50%; /* Establecer el ancho máximo de las imágenes en el 100% del ancho del slider */
     height: auto; /* Establecer la altura de las imágenes en 'auto' para mantener la proporción de aspecto */
   }
   
@@ -26,9 +26,9 @@ body{
     display: block;
 }
 
-.slider {
-    height: 40px;
-    width: 50px;
+.sliderC {
+    height: 50vh;
+    width: 50vh;
 }
 
 header{
