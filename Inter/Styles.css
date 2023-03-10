@@ -12,7 +12,7 @@ body{
 .f{
     letter-spacing: 2px;
     line-height: 25px;
-    color: aqua;
+    color: #f0b639;
     text-align: center;
 }
 
@@ -35,8 +35,6 @@ header{
     display: flex;
     justify-content:center;
 }
-
-
 
 header nav{
     background: #f4d69d;
@@ -63,7 +61,7 @@ header nav ul li {
 
 header nav ul li a {
     text-align: center;
-    padding: 5px 80px;
+    padding: 5px 100px;
     display: block;
     color: #000000;
     text-decoration:none;
@@ -74,14 +72,24 @@ header nav ul li a:hover{
     background: #e2c496;
 }
 
-html{
-    width:150%;
-}
+.logo-container {
+    margin-left: 20px;
+    display: block;
+  }
+  
+  .logo-container img {
+    height: 60px;
+    width: auto;
+    display: block;
+  }
+  
+  nav {
+    margin-right: 20px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.Logonav{
-    width:100%;
-    height:50%;
-}
 
 footer{
     color: #f4d69d;
