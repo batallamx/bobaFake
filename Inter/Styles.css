@@ -108,6 +108,45 @@ footer{
     line-height: 47px;
 }
 
+.ubicacion{
+    height: 200px;
+    width:50%;
+    margin-left:220px;
+    background: #f0b639;
+    padding: 10px 50px;
+    margin: auto;
+
+}
+
+.ubicacion .titulo{
+    
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight:300;
+    margin-bottom: 40px;
+}
+
+.ubicacion .direccion{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.ubicacion .horarios{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.ubicacion .direccion .calle{
+    margin-bottom:15px ;
+}
+
+.ubicacion .horarios{
+
+    overflow: hidden;
+}
 .subir{
     color:royalblue ;
     text-decoration: none;
