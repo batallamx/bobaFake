@@ -15,8 +15,14 @@
 		<!--Para referenciar los estilos de css-->
 		<link rel="stylesheet" type="text/css" href="../Styles2.css" />
 
-		<!--Para referenciar los eventos de js-->
+    <!--Para referenciar los estilos de css-->
+		<link rel="stylesheet" type="text/css" href="../Stylesf.css" />
+
+    <!--Para referenciar los eventos de js-->
 		<script src="../main_events.js"></script>
+
+		<!--Para referenciar los eventos de js-->
+		<script src="../funciones.js"></script>
 
 		<!--Favicon-->
 		<link
@@ -71,6 +77,33 @@
 				<a href="#">Ver perfil completo</a>
 			</div>
 		</center>
+
+    <center>
+      <div class="contenedorf">
+        <form action="" class="form" id="form" name="form">
+            <div class="contenedor-inputs">
+                <input type="text" name="nombre" placeholder="Nombre:">
+                <input type="email" name="c orreo" placeholder="Correo:">
+
+                <div class="Genero">
+                    <input type="radio" name="genero" id="hombre" value="hombre">
+                    <label for="hombre" class="label-radio hombre"> Hombre</label>
+                    
+                    <input type="radio" name="genero" id="mujer" value="Mujer">
+                    <label for="mujer" class="label-radio mujer"> Mujer</label>
+                </div>
+
+                <div class="terminos">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos"> Acepto terminos y condiciones</label>
+                </div>
+                <ul class="error" id="error"></ul>
+            </div>
+            <input type="submit" class="btn" value="Log-in">
+        </form>
+    </div>
+    </center>
+
 	</body>
 	<footer>
 		Copyright 2023
