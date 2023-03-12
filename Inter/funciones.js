@@ -2,14 +2,14 @@ var Formulario = document.getElementById("form");
 var nombre = Formulario.nombre,
 	correo = Formulario.correo,
 	genero = Formulario.genero,
-	terminos = Formulario.terminos;
+	terminos = Formulario.terminos,
+	mensaje = Formulario.mensaje;
 var error = document.getElementById("error");
 
 function validarName(e) {
 	if (nombre.value == "" || nombre.value == null) {
 		error.style.display = "block";
-		error.innerHTML += "<li> Complete name </li>";
-		console.log("Please add a name");
+		error.innerHTML += "<li> Ingresa tu nombre </li>";
 
 		e.preventDefault();
 	} else {
@@ -20,19 +20,29 @@ function validarName(e) {
 function validarEmail(e) {
 	if (correo.value == "" || correo.value == null) {
 		error.style.display = "block";
-		error.innerHTML += "<li>Complete email</li>";
-		console.log("Please add an email");
+		error.innerHTML += "<li>Ingreso un correo</li>";
 
 		e.preventDefault();
 	} else {
 		error.style.display = "none";
 	}
 }
+
+function validarMensaje(e) {
+	if (mensaje.value == "" || mensaje.value == null) {
+		error.style.display = "block";
+		error.innerHTML += "<li>Ingresa tu mensaje</li>";
+
+		e.preventDefault();
+	} else {
+		error.style.display = "none";
+	}
+}
+
 function validarGender(e) {
 	if (genero.value == "" || genero.value == null) {
 		error.style.display = "block";
-		error.innerHTML += "<li> Select gender </li>";
-		console.log("Please select gender");
+		error.innerHTML += "<li> Selecciona tu género </li>";
 		e.preventDefault();
 	} else {
 		error.style.display = "none";
@@ -41,8 +51,8 @@ function validarGender(e) {
 function validarTerms(e) {
 	if (terminos.checked == false) {
 		error.style.display = "block";
-		error.innerHTML += "<li> Agree terms and conditions </li>";
-		console.log("Please agree terms & conditions");
+		error.innerHTML += "<li> Acepta los términos y condiciones </li>";
+
 		e.preventDefault();
 	} else {
 		error.style.display = "none";
@@ -53,6 +63,7 @@ function validarFormulario(e) {
 	error.innerHTML = "";
 	validarName(e);
 	validarEmail(e);
+	validarMensaje(e);
 	validarGender(e);
 	validarTerms(e);
 }
