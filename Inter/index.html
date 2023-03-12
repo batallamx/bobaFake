@@ -1,97 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Boba Station</title>
-    <!--Referencias jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <!--Para referenciar los estilos de css-->
-    <link rel="stylesheet" type="text/css" href="/Inter/Styles.css" />
-    
-    <!--Para referenciar los eventos de js-->
-    <script src="/Inter/main_events.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Boba Station</title>
+		<!--Referencias jquery-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!--Favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="img/1678215890.ico">
+		<!--Para referenciar los estilos de css-->
+		<link rel="stylesheet" type="text/css" href="Styles.css" />
 
-    <!--Slider--> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<!--Para referenciar los eventos de js-->
+		<script src="main_events.js"></script>
 
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <a href="/Inter/index.html"><img src="/Inter/img/logo.jpg" alt="Logo"></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/Inter/index.html">Inicio</a></li>
-          <li><a href="/Inter/html/Nosotros.html">Contacto</a></li>
-          <li><a href="/Inter/html/Historia.html">Historia</a></li>
-        </ul>
-      </nav>
-    </header>
-    <center>
-      <div class="date"></div>
+		<!--Favicon-->
+		<link rel="shortcut icon" type="image/x-icon" href="img/1678215890.ico" />
 
-      <div class="sliderC">
-        <div class="slider">
-          <img src="/Inter/img/Berries.jpg" alt="Berries">
-          <img src="/Inter/img/bitter.jpg" alt="Bitter Boba">
-          <img src="/Inter/img/banani.jpg" alt="Banani">
-          <img src="/Inter/img/caramel.jpg" alt="Caramel">
-          <img src="/Inter/img/chai_ch.jpg" alt="Chai Chocolate">
-          <img src="/Inter/img/Chamango.jpg" alt="Chamoyada Mango">
-        </div>
-      </div>
-    
-      <div class="contenedor">
-        <h1 class="titulo">Dirección</h1>
-        <section class="ubicacion">
-          <div class="direccion">
-            <h4>Dirección</h4>
-            <p class="calle">Avenida Paseo de las Pitahayas 55<br> Santiago de Querétaro, Qro.</p>
-            <p class="contacto">442 155 1554 <br> hello@bobastation.com.mx </p>
-          </div>
-          <div class="horarios">
-            <h4>Horarios</h4>
-            <p class="entre-semana">Lunes a Viernes<br> 10:00-21:50 </p>
-            <p class="fines">Sábado y Domingo<br> 12:00-21:50 </p>
-          </div>
-        </section>
-      </div>
-    </center>
-    
-    <center>
-      <iframe class= "mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4223.697405416084!2d-100.31601428483901!3d20.67787790503925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35d5d76f54909%3A0x79108c2eed559894!2sBoba%20Station%20Zibat%C3%A1!5e1!3m2!1ses!2smx!4v1678390329731!5m2!1ses!2smx" width="600" height="400" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </center>
-  </body>
-    <footer>
-    Copyright 2023
+		<!--Slider-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<a href="index.html"><img src="img/logo.jpg" alt="Logo" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="html/Nosotros.html">Contacto</a></li>
+					<li><a href="html/Historia.html">Historia</a></li>
+				</ul>
+			</nav>
+		</header>
+		<center>
+			<div class="date"></div>
 
-      <div class="subir">
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="12" r="9" />
-            <line x1="12" y1="8" x2="8" y2="12" />
-            <line x1="12" y1="8" x2="12" y2="16" />
-            <line x1="16" y1="12" x2="12" y2="8" />
-          </svg>
-        </a>
-      </div>
+			<div class="sliderC">
+				<div class="slider">
+					<img src="img/Berries.jpg" alt="Berries" />
+					<img src="img/bitter.jpg" alt="Bitter Boba" />
+					<img src="img/banani.jpg" alt="Banani" />
+					<img src="img/caramel.jpg" alt="Caramel" />
+					<img src="img/chai_ch.jpg" alt="Chai Chocolate" />
+					<img src="img/Chamango.jpg" alt="Chamoyada Mango" />
+				</div>
+			</div>
 
-      <a href="https://www.facebook.com/Bobastationqro" class="redes">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-        </svg>
-      </a>
-        
-    </footer>
+			<div class="contenedor">
+				<h1 class="titulo">Dirección</h1>
+				<section class="ubicacion">
+					<div class="direccion">
+						<h4>Dirección</h4>
+						<p class="calle">
+							Avenida Paseo de las Pitahayas 55<br />
+							Santiago de Querétaro, Qro.
+						</p>
+						<p class="contacto">
+							442 155 1554 <br />
+							hello@bobastation.com.mx
+						</p>
+					</div>
+					<div class="horarios">
+						<h4>Horarios</h4>
+						<p class="entre-semana">
+							Lunes a Viernes<br />
+							10:00-21:50
+						</p>
+						<p class="fines">
+							Sábado y Domingo<br />
+							12:00-21:50
+						</p>
+					</div>
+				</section>
+			</div>
+		</center>
+
+		<center>
+			<iframe
+				class="mapa"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4223.697405416084!2d-100.31601428483901!3d20.67787790503925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35d5d76f54909%3A0x79108c2eed559894!2sBoba%20Station%20Zibat%C3%A1!5e1!3m2!1ses!2smx!4v1678390329731!5m2!1ses!2smx"
+				width="600"
+				height="400"
+				style="border: 0"
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</center>
+	</body>
+	<footer>
+		Copyright 2023
+
+		<div class="subir">
+			<a href="#">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon icon-tabler icon-tabler-arrow-up-circle"
+					width="60"
+					height="60"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="#ff9300"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+					<circle cx="12" cy="12" r="9" />
+					<line x1="12" y1="8" x2="8" y2="12" />
+					<line x1="12" y1="8" x2="12" y2="16" />
+					<line x1="16" y1="12" x2="12" y2="8" />
+				</svg>
+			</a>
+		</div>
+
+		<a href="https://www.facebook.com/Bobastationqro" class="redes">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="icon icon-tabler icon-tabler-brand-facebook"
+				width="40"
+				height="40"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="#00abfb"
+				fill="none"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			>
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<path
+					d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+				/>
+			</svg>
+		</a>
+	</footer>
 </html>
