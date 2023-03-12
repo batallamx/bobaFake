@@ -12,8 +12,6 @@ function validarName(e) {
 		error.innerHTML += "<li> Ingresa tu nombre </li>";
 
 		e.preventDefault();
-	} else {
-		error.style.display = "none";
 	}
 }
 
@@ -23,8 +21,6 @@ function validarEmail(e) {
 		error.innerHTML += "<li>Ingreso un correo</li>";
 
 		e.preventDefault();
-	} else {
-		error.style.display = "none";
 	}
 }
 
@@ -34,8 +30,6 @@ function validarMensaje(e) {
 		error.innerHTML += "<li>Ingresa tu mensaje</li>";
 
 		e.preventDefault();
-	} else {
-		error.style.display = "none";
 	}
 }
 
@@ -44,8 +38,6 @@ function validarGender(e) {
 		error.style.display = "block";
 		error.innerHTML += "<li> Selecciona tu género </li>";
 		e.preventDefault();
-	} else {
-		error.style.display = "none";
 	}
 }
 function validarTerms(e) {
@@ -54,8 +46,6 @@ function validarTerms(e) {
 		error.innerHTML += "<li> Acepta los términos y condiciones </li>";
 
 		e.preventDefault();
-	} else {
-		error.style.display = "none";
 	}
 }
 
@@ -66,6 +56,11 @@ function validarFormulario(e) {
 	validarMensaje(e);
 	validarGender(e);
 	validarTerms(e);
+
+	if (error.innerHTML == "") {
+		error.style.display = "none";
+		alert("El formulario se ha enviado correctamente.");
+	}
 }
 
 Formulario.addEventListener("submit", validarFormulario);
