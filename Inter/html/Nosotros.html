@@ -6,23 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Boba Station</title>
 
-		<!--Referencias jquery-->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 		<!--Para referenciar los estilos de css-->
 		<link rel="stylesheet" type="text/css" href="../Styles.css" />
 
 		<!--Para referenciar los estilos de css-->
 		<link rel="stylesheet" type="text/css" href="../Styles2.css" />
 
-    <!--Para referenciar los estilos de css-->
+		<!--Para referenciar los estilos de css-->
 		<link rel="stylesheet" type="text/css" href="../Stylesf.css" />
-
-    <!--Para referenciar los eventos de js-->
-		<script src="../main_events.js"></script>
-
-		<!--Para referenciar los eventos de js-->
-		<script src="../funciones.js"></script>
 
 		<!--Favicon-->
 		<link
@@ -78,32 +69,31 @@
 			</div>
 		</center>
 
-    <center>
-      <div class="contenedorf">
-        <form action="" class="form" id="form" name="form">
-            <div class="contenedor-inputs">
-                <input type="text" name="nombre" placeholder="Nombre:">
-                <input type="email" name="c orreo" placeholder="Correo:">
+		<center>
+			<div class="contenedorf">
+				<form action="" class="form" id="form">
+					<div class="contenedor-inputs">
+						<input type="text" name="nombre" placeholder="Nombre:" />
+						<input type="email" name="correo" placeholder="Correo:" />
 
-                <div class="Genero">
-                    <input type="radio" name="genero" id="hombre" value="hombre">
-                    <label for="hombre" class="label-radio hombre"> Hombre</label>
-                    
-                    <input type="radio" name="genero" id="mujer" value="Mujer">
-                    <label for="mujer" class="label-radio mujer"> Mujer</label>
-                </div>
+						<div class="Genero">
+							<input type="radio" name="genero" id="hombre" value="hombre" />
+							<label for="hombre" class="label-radio hombre"> Hombre</label>
 
-                <div class="terminos">
-                    <input type="checkbox" name="terminos" id="terminos">
-                    <label for="terminos"> Acepto terminos y condiciones</label>
-                </div>
-                <ul class="error" id="error"></ul>
-            </div>
-            <input type="submit" class="btn" value="Log-in">
-        </form>
-    </div>
-    </center>
+							<input type="radio" name="genero" id="mujer" value="Mujer" />
+							<label for="mujer" class="label-radio mujer"> Mujer</label>
+						</div>
 
+						<div class="terminos">
+							<input type="checkbox" name="terminos" id="terminos" />
+							<label for="terminos"> Acepto terminos y condiciones</label>
+						</div>
+						<ul class="error" id="error"></ul>
+					</div>
+					<input type="submit" class="btn" value="Enviar" />
+				</form>
+			</div>
+		</center>
 	</body>
 	<footer>
 		Copyright 2023
@@ -155,4 +145,10 @@
 			</svg>
 		</a>
 	</footer>
+	<!--Para referenciar los eventos de js-->
+	<script src="../funciones.js"></script>
+	<!--Para referenciar los eventos de js-->
+	<script src="../main_events.js"></script>
+	<!--Referencias jquery-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </html>
